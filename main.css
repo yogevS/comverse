@@ -1,7 +1,6 @@
 
 .top {
 
-  border: 2px solid black;
   margin-bottom: 5px;
 }
 
@@ -10,31 +9,122 @@
   border: 2px solid black;
   margin-top: 5px;
  margin-bottom: 5px;
+
 }
 
+
 .bottom{
+  clear:both;
   margin-top: 5px;
   border: 2px solid black;
 }
 
 .LangueAndUser{
-  float: right;
-
+float: right;
+position: relative;
+bottom:10px;
+right:300px;
 }
 
 .MenueBar>ul>li{
 display: inline;
+position: relative;
+left:300px;
+top:10px;
+font-style: italic;
 }
 
-.Part1{
-border: 2px solid red;
+.HeadLine{
+font-size:150%;
+color: white;
+}
+.Part1>.HeadLine{
+padding-top:30px;
+max-width: 250px;
 
 }
-.Part2{
-border: 2px solid red;
+.Part1>.Text,.Part1>.HeadLine,.AdvertisForComverse{
+color:white;
+padding-left: 300px;
+}
+
+.AdvertisForComverse{
+height:100px; ;
+}
+.AdvertisForComverseBox1,.AdvertisForComverseBox2,.AdvertisForComverseBox3{
+ float: left;
+ max-width: 170px;
+ border:2px ;
+ border-radius: 5px;
 
 }
+.AdvertisForComverseBox1{
+  background-color: purple;
+}
+.AdvertisForComverseBox2{
+  margin-left: 15px;
+  background-color: green;
+}
+
+.AdvertisForComverseBox3{
+  margin-left: 15px;
+  background-color: orange;
+}
+
+.mid .Part1{
+background-color: black;
+
+}
+
+.mid .Part2{
+clear:both;
+background-color: dodgerblue;
+}
+
+.Part2Con,.Part3Con{
+margin-left: 300px;
+}
+
+.Part2 .HeadLine,.Part3 .HeadLine{
+  padding-top: 30px;
+  padding-left:50px;
+}
+
+.WhatWeCanDoForYou>ul>li{
+  display: inline;
+  color:white;
+  position: relative;
+  padding-left: 10px;
+
+}
+
+.Part2 .button{
+  color: white;
+width: 140px;
+margin-left: 200px;
+border-radius:4px;
+background-color:#4169E1;
+
+}
+
+
 .Part3{
-border: 2px solid red;
+  clear:both;
+  background-color: blue;
+}
 
+.EventsAndNews{
+  margin-top: 20px;
+  height: 130px;
+}
+
+.News,.Events{
+  float: left;
+  max-width: 170px;
+border:2px solid green;
+}
+
+.Events{
+
+  margin-left: 30px;
 }
