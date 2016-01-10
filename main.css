@@ -176,34 +176,42 @@ background: radial-gradient(#66d9ff,#0081ff)
   color:white;
 }
 
-.WWCDFU{
+.WWCDFU1,.WWCDFU2,.WWCDFU3,.WWCDFU4,.WWCDFU5,.WWCDFU6{
   display: inline-block;
   color:white;
   width: 150px;
   font-size: 110%;
   text-align:center;
-position: relative;
+
 }
 
-.mid .Part2 .hoverImg{
-  position: absolute;
-   top: 0;
-  display: none;
-}
-
-.WWCDFU:hover .hoverImg {
-    display: block;
+.WWCDFU1:hover img {
+    content: url("solution_icon_biz-analitics_hover.png");
   }
 
-.WWCDFU:hover .img1{
-  padding-left: 4px;
+.WWCDFU2:hover img {
+    content: url("solution_icon_diti-cx_hover.png");
+  }
+
+  .WWCDFU3:hover img {
+      content: url("solution_icon_smart-money_hover.png");
+    }
+
+.WWCDFU4:hover img {
+      content: url("solution_icon_optimize-efficnt_hover.png");
+    }
+
+  .WWCDFU5:hover img {
+      content: url("solution_icon_personal_hover.png");
+  }
+
+  .WWCDFU6:hover img {
+      content: url("solution_icon_biz-transform_hover.png");
+  }
+
+.WWCDFU:hover{
+      cursor: pointer;
 }
-
-.WWCDFU:hover .img2{
-  padding-left: 7px;
-}
-
-
 
 .WhatWeCanDoForYou{
   padding-bottom: 35px;
@@ -238,18 +246,21 @@ padding: 10px;
   display: inline-flex;
 }
 
-
 .EventsAndNews{
  padding-bottom: 40px;
 }
 
-.News,.Events{
-  display: inline-block;
-
+.link1 {
+padding-bottom: 4px;
 }
 
-.EventsAndNewsHL{
-padding-bottom: 5px;
+.News,.Events{
+  display: inline-block;
+}
+
+
+.EventsAndNewsHL1,.EventsAndNewsHL2,.EventsAndNewsHL3{
+padding-bottom: 10px;
 text-align: left;
 color:white;
 font-size: 150%;
@@ -300,20 +311,24 @@ padding-left: 10px;
 color: black;
 }
 
-.mid .Part3 .hoverImg{
-position: absolute;
-padding-top: 7px;
-left:0;
-display: none;
-}
+.link1:hover img {
+    content: url("eventListIconNews_hover.png");
+  }
+
+.link2:hover img {
+    content: url("eventListIconEvents_hover.png");
+  }
+
+.link3:hover img {
+    content: url("eventListIconPress_hover.png");
+  }
 
 .link{
   position: relative;
   float: left;
 }
 
-.link:hover .hoverImg,.link:hover .linkText {
-display: block;
+.link1:hover .linkText,.link2:hover .linkText,.link3:hover .linkText {
 color: black;
 }
 
@@ -465,6 +480,7 @@ display: inline-block;
 .BottomListCon{
   width: 700px;
   border: 1px solid green;
+  display: inline-block;
 }
 
 .BottomList+.BottomList{
@@ -488,7 +504,6 @@ margin-left: 40px;
 }
 
 
-
 .WeLoveLikes{
 border: 2px solid black;
 width: 200px;
@@ -501,6 +516,7 @@ display: inline-flex;
 
 .WeLoveLikes text{
   color: white;
+
 }
 
 .miniHeadLine{
