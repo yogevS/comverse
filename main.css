@@ -182,7 +182,6 @@ background: radial-gradient(#66d9ff,#0081ff)
   width: 150px;
   font-size: 110%;
   text-align:center;
-
 }
 
 .WWCDFU1:hover img {
@@ -239,6 +238,10 @@ padding: 10px;
 .Part3{
   clear:both;
   background-image:url("news-and-events-bg.jpg");
+  background-repeat: no-repeat;
+  background-position:center center;
+  background-attachment: fixed;
+  background-size:cover;
 }
 
 .mid .Part3 a{
@@ -279,6 +282,7 @@ padding: 10px;
 
 .box:hover{
   background-color: rgba(204, 204, 204,1);
+
 }
 
 .date{
@@ -290,10 +294,7 @@ padding: 10px;
 .day{
   font-size: 300%;
   color: white;
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-top: 5px;
-  padding-bottom: 5px;
+  text-align: center;
 }
 
 .month{
@@ -478,9 +479,7 @@ display: inline-block;
 
 
 .BottomListCon{
-  width: 700px;
-  border: 1px solid green;
-  display: inline-block;
+  display: inline-flex;
 }
 
 .BottomList+.BottomList{
@@ -489,6 +488,7 @@ margin-left: 40px;
 
 .BottomList{
   padding-top: 20px;
+  padding-bottom: 50px;
 }
 
 .BottomList>ul{
@@ -501,16 +501,19 @@ margin-left: 40px;
 
 .BottomListHeader{
   color: white;
+  padding-bottom: 15px;
 }
 
 
 .WeLoveLikes{
-border: 2px solid black;
-width: 200px;
-display: inline-flex;
+width: 300px;
+margin-left: 100px;
+background-color: #404040;
 }
 
 .WeLoveLikesCon{
+width: 250px;
+margin: auto;
 
 }
 
@@ -520,12 +523,36 @@ display: inline-flex;
 }
 
 .miniHeadLine{
-color: blue;
-padding-bottom: 13px;
+color:  #6cc3f9;
+padding-bottom: 20px;
+text-align: center;
+padding-top: 20px;
 }
 
-.LikeUs{
+.blogBox{
+  display: inline-flex;
+border-bottom: 1px solid white;
+padding-bottom: 10px;
+}
 
+.blogBox>text{
+  padding-left: 10px;
+}
+
+.blogBoxdate {
+width: 70px;
+}
+
+.blogBoxday{
+  font-size: 270%;
+  color: white;
+  text-align: center;
+}
+
+.blogBoxmonth{
+  font-size: 160%;
+  color: white;
+  text-align: center;
 }
 
 .SIGNUPText{
@@ -535,11 +562,29 @@ padding-bottom: 13px;
 .SIGNUP{
   width: 65px;
   border-radius: 5px;
-  background-color: blue;
+  background-color:  #23a5f6;
+  color: white;
   padding: 4px;
 }
 
-.CopyRight{
-clear: both;
+.SIGNUP:hover{
+  cursor: pointer;
+}
 
+.LikeUslogo{
+  padding-top: 40px;
+}
+
+.CopyRight{
+position: relative;
+bottom:25px;
+}
+
+.CopyRightCon{
+position: absolute;
+}
+
+.CopyRightCon>span{
+  margin-right: 10px;
+  margin-left: 10px;
 }
