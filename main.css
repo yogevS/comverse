@@ -9,14 +9,12 @@
   border: 2px solid black;
   margin-top: 5px;
  margin-bottom: 5px;
-
 }
-
 
 .bottom{
   clear:both;
   margin-top: 5px;
-  border: 2px solid black;
+
 }
 
 .LangueAndUser{
@@ -25,29 +23,43 @@ position: relative;
 bottom:10px;
 right:300px;
 }
-
+.MenueBar{
+  padding-left: 300px;
+}
 .MenueBar>ul>li{
 display: inline;
-position: relative;
-left:300px;
-top:10px;
-font-style: italic;
+float:left;
+font-style: normal;
+padding-left: 20px;
+
+}
+a{
+color: black;
+text-decoration:none;
 }
 
 .HeadLine{
 font-size:150%;
-color: white;
+
 }
-.Part1>.HeadLine{
+.Part1 .HeadLine{
 padding-top:30px;
-max-width: 250px;
+width: 250px;
 
 }
-.Part1>.Text,.Part1>.HeadLine,.AdvertisForComverse{
+.Part1 .Text,.Part1 .HeadLine,.AdvertisForComverse{
 color:white;
-padding-left: 300px;
 }
 
+.mid .Part1 .button{
+  color: white;
+  width: 80px;
+  border-radius:4px;
+  background-color:#4169E1;
+  margin-top: 20px;
+  margin-bottom: 20px;
+padding-left: 3px;
+}
 .AdvertisForComverse{
 height:100px; ;
 }
@@ -81,13 +93,14 @@ clear:both;
 background-color: dodgerblue;
 }
 
-.Part2Con,.Part3Con{
+.Part1Con,.Part2Con,.Part3Con{
 margin-left: 300px;
 }
 
 .Part2 .HeadLine,.Part3 .HeadLine{
   padding-top: 30px;
   padding-left:50px;
+  color:white;
 }
 
 .WhatWeCanDoForYou>ul>li{
@@ -99,7 +112,7 @@ margin-left: 300px;
 }
 
 .Part2 .button{
-  color: white;
+color: white;
 width: 140px;
 margin-left: 200px;
 border-radius:4px;
@@ -121,10 +134,72 @@ background-color:#4169E1;
 .News,.Events{
   float: left;
   max-width: 170px;
-border:2px solid green;
+
 }
 
 .Events{
-
   margin-left: 30px;
+}
+.box{
+border:2px solid green;
+background-color: white;
+}
+
+
+.bottomPart1 .HeadLine{
+  padding-top: 30px;
+  padding-left:200px;
+  margin-bottom: 20px;
+}
+
+.bottomPart2{
+clear:both;
+margin-top: 20px;
+border: 1px solid blue;
+background-color: grey;
+}
+.SCS{
+  height: 200px;
+}
+.SC1Con,.SC3Con{
+  margin-bottom: 8px;
+  border: 1px solid blue;
+}
+.SC2Con{
+  clear:both;
+  border: 1px solid blue;
+
+}
+.SC1,.SC2,.SC3{
+border:1px solid black;
+width:200px;
+float:left;
+margin-left: 5px;
+}
+
+.logo{
+border:1px solid green;
+float:left;
+width: 50px;
+}
+
+.SC2 .logo{
+  margin-bottom: 8px;
+}
+.bottomPart1 .button{
+color: white;
+width: 200px;
+margin-left: 200px;
+border-radius:4px;
+background-color:#4169E1;
+}
+
+.BottomList,.WeLoveLikes{
+float:left;
+margin-left: 20px;
+height: 300px;
+}
+.CopyRight{
+clear:both;
+margin-top 1px;
 }
