@@ -1,54 +1,70 @@
 
 .top {
-
   margin-bottom: 5px;
-
 }
 
 .mid{
   clear:both;
   margin-top: 5px;
- margin-bottom: 5px;
-
 }
 
 .bottom{
   clear:both;
-  margin-top: 5px;
 }
 
 .ContentWrapper{
   width: 940px;
   margin: auto;
 }
+
+/*             *//*             */
+
 .LangueAndUser{
 float: right;
-position: relative;
-bottom:10px;
-
 }
 
-.logo{
+.Langue,.userLogin{
+  display: inline;
+}
+
+.Comverselogo{
 
 }
 
 .MenueBar{
 clear:both;
-margin-top: 30px;
 }
 
-.MenueBar>ul>li{
-display: inline;
-float:left;
-font-style: normal;
-padding-left: 20px;
+.MenueBar ul{
+margin: 0;
+padding: 0;
+list-style-type: none;
+}
 
+.MenueBar ul>li {
+display: inline-flex;
+font-style: normal;
+font-size: 83%;
+padding-left: 7px;
+}
+
+.MenueBar img{
+padding-left: 7px;
+}
+
+.MenueBar form{
+  padding-left: 70px;
 }
 
 .top a{
 color: black;
 text-decoration:none;
+}
 
+/*             *//*             */
+.mid .Part1 a,.mid .Part2 a{
+  color: white;
+  text-decoration:none;
 }
 
 .HeadLine{
@@ -58,10 +74,11 @@ font-size:200%;
 .Part1Con,.Part2Con,.Part3Con{
 margin: auto;
 width:940px;
+border: 1px solid black;
 }
 
 .mid .Part1{
-background-image:url("D:/WebSite Projects/Comverse/Comverse images/slide-bg-complexity.jpg");
+background-image:url("slide-bg-complexity.jpg");
 background-repeat: no-repeat;
 background-attachment: fixed;
 background-position:top;
@@ -90,10 +107,6 @@ color:white;
   padding-left: 50px;
 }
 
-.mid .Part1 a{
-  color: white;
-  text-decoration:none;
-}
 
 .AdvertisForComverse{
 margin-top: 80px;
@@ -145,13 +158,16 @@ display: inline-flex;
 padding-left: 5px;
 }
 
+/*             */
+
 .mid .Part2{
 clear:both;
-
 background: radial-gradient(#66d9ff,#0081ff)
 }
 
-
+.FirstBlock{
+  padding-left: 15px;
+}
 
 .Part2 .HeadLine,.Part3 .HeadLine{
   padding-top: 50px;
@@ -164,13 +180,21 @@ background: radial-gradient(#66d9ff,#0081ff)
   display: inline-block;
   color:white;
   width: 150px;
-
+  font-size: 110%;
+  text-align:center;
+position: relative;
 }
 
-.WWCDFU>img{
-
+.mid .Part2 .hoverImg{
+  position: absolute;
+   top: 0;
+  display: none;
 }
 
+.WWCDFU:hover .hoverImg {
+    display: block;
+
+  }
 .WhatWeCanDoForYou{
   padding-bottom: 35px;
 }
@@ -179,24 +203,31 @@ background: radial-gradient(#66d9ff,#0081ff)
 padding-bottom: 40px;
 }
 
-.Part2 .button{
+.mid .Part2 .button{
 color: white;
-width: 140px;
+width: 190px;
 margin: auto;
 border-radius:4px;
-background-color:#4169E1;
+background-color:#0099FF;
+padding: 10px;
 }
 
+.mid .Part2 .button>a>img{
+  padding-left: 20px;
+}
+
+/*             */
 
 .Part3{
   clear:both;
-  background-image:url("D:/WebSite Projects/Comverse/Comverse images/news-and-events-bg.jpg");
-
+  background-image:url("news-and-events-bg.jpg");
 }
 
-.Hide{
-visibility: hidden;
+.mid .Part3 a{
+  text-decoration:none;
+  display: inline-flex;
 }
+
 
 .EventsAndNews{
  padding-bottom: 40px;
@@ -208,113 +239,258 @@ visibility: hidden;
 }
 
 .EventsAndNewsHL{
-padding-bottom: 30px;
-text-align: center;
+padding-bottom: 5px;
+text-align: left;
 color:white;
 font-size: 150%;
 }
 
 .Events{
   margin-left: 10px;
-
 }
 
 .box{
-border:2px solid green;
-background-color: white;
-width: 300px;
-
+background-color: rgba(204, 204, 204,0.5);
+width: 270px;
+border-radius: 2px;
+padding: 10px;
 }
 
+.box:hover{
+  background-color: rgba(204, 204, 204,1);
+}
+
+.date{
+  background-color: #3399ff;
+  width: 70px;
+  border-radius: 2px;
+}
+
+.day{
+  font-size: 300%;
+  color: white;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.month{
+  font-size: 120%;
+  color: white;
+  border-top: 1px white dashed;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.EventsAndNewsText{
+padding-left: 10px;
+color: black;
+}
+
+.mid .Part3 .hoverImg{
+position: absolute;
+padding-top: 7px;
+left:0;
+display: none;
+}
+
+.link{
+  position: relative;
+  float: left;
+}
+
+.link:hover .hoverImg,.link:hover .linkText {
+display: block;
+color: black;
+}
+
+.linkText{
+padding-top: 7px;
+padding-left: 5px;
+color: white;
+}
+
+.EANlinkImage{
+  padding-top: 7px;
+}
+
+/*             *//*             */
+
+.bottomPart1 a{
+  color: white;
+  text-decoration:none;
+}
+
+.bottomPart1{
+  background-color: #cccccc;
+}
 
 .bottomPart1 .HeadLine{
   text-align: center;
-  padding-top: 30px;
-}
-
-.bottomPart2{
-clear:both;
-margin-top: 20px;
-background-color: grey;
+  padding-top: 50px;
 }
 
 .SCS{
-  height: 200px;
-  margin-top: 30px;
+  margin-top: 50px;
+  display: inline-flex;
 }
-.SC1Con,.SC3Con{
-  margin-bottom: 8px;
-  border: 1px solid blue;
-}
-.SC2Con{
-  clear:both;
-  border: 1px solid blue;
 
+.SC1{
+  width:330px;
 }
-.SC1,.SC2,.SC3{
-border:1px solid black;
-width:200px;
-float:left;
-margin-left: 5px;
+
+.SC2{
+  width:330px;
+  margin-left: 15px;
+}
+
+.SC3{
+  margin-left: 15px;
+  width:215px;
+}
+
+.SC1Con,.SC3Con,.SC2Con{
+  background-color: white;
+}
+
+.SC1quote,.SC2quote,.SC3quote{
+  display: inline-flex;
+}
+
+.SC1quote>img,.SC2quote>img{
+  margin:10px;
+}
+
+.SC1quoteCon,.SC2quoteCon{
+  margin:10px;
+  font-size: 110%;
+}
+
+.SC3quoteCon{
+    margin:10px;
+    font-size: 136%;
+}
+
+.SC-Info{
+  margin:10px;
+  border-top: 1px solid grey;
+  padding-top: 10px;
+  display:inline-flex;
+}
+
+.SC-name{
+  font-size: 84%;
+  color: blue;
+}
+
+.SC-InfoCon>text{
+  font-size: 84%;
+}
+
+.SC-InfoImg{
+padding-left: 20px;
+}
+
+.SC1 .logoContainer,.SC3 .logoContainer{
+  margin-top: 15px;
+}
+
+.SC2 .logoContainer{
+  margin-bottom: 10px;
+
 }
 
 .logo{
-border:1px solid green;
-float:left;
-width: 50px;
+display: inline;
 }
 
-.SC2 .logo{
-  margin-bottom: 8px;
+.logo>img{
+width:100px;
 }
+
+.logo+.logo{
+  padding-left: 10px;
+}
+
 
 .bottomPart1 .button{
+  width: 200px;
+  background-color:#0099FF;
+  padding: 10px;
   color: white;
-  width: 140px;
   margin: auto;
+  margin-top: 30px;
   border-radius:4px;
-  background-color:#4169E1;
+  clear:both;
+}
+
+.bottomPart1 .button>a>img{
+  padding-left: 20px;
+}
+
+
+/*             */
+
+.bottomPart2{
+clear:both;
+background-color: #262626;
 }
 
 .bottom .Part2Con{
 
 }
-.BottomList,.WeLoveLikes{
-float:left;
-height: 300px;
+
+.BottomList{
+display: inline-block;
 }
 
-.BottomList+.BottomList,.WeLoveLikes{
-margin-left: 60px;
+.BottomList>ul>li{
+
+}
+
+
+.BottomListCon{
+  width: 700px;
+  border: 1px solid green;
+}
+
+.BottomList+.BottomList{
+margin-left: 40px;
 }
 
 .BottomList{
   padding-top: 20px;
 }
+
 .BottomList>ul{
-  list-style: none;
   margin: 0;
   padding: 0;
+  list-style-type: none;
    color: white;
+
 }
 
 .BottomListHeader{
   color: white;
 }
 
+
+
 .WeLoveLikes{
 border: 2px solid black;
-width: 225px;
-float: left;
+width: 200px;
+display: inline-flex;
+}
+
+.WeLoveLikesCon{
 
 }
-.WeLoveLikesCon{
-  margin: auto;
-  width:200px;
-}
+
 .WeLoveLikes text{
   color: white;
-
 }
 
 .miniHeadLine{
@@ -325,9 +501,11 @@ padding-bottom: 13px;
 .LikeUs{
 
 }
+
 .SIGNUPText{
   width: 120px;
 }
+
 .SIGNUP{
   width: 65px;
   border-radius: 5px;
@@ -337,5 +515,5 @@ padding-bottom: 13px;
 
 .CopyRight{
 clear: both;
-margin-top: 5px;
+
 }
