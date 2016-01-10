@@ -1,11 +1,17 @@
 
+html{
+font: normal 62.5%  Cambria, Georgia, serif;
+
+}
+
+
 .top {
-  margin-bottom: 5px;
+  margin-bottom: 0.5rem;
 }
 
 .mid{
   clear:both;
-  margin-top: 5px;
+  margin-top: 0.5rem;
 }
 
 .bottom{
@@ -21,6 +27,7 @@
 
 .LangueAndUser{
 float: right;
+font-size: 1.5rem;
 }
 
 .Langue,.userLogin{
@@ -44,16 +51,16 @@ list-style-type: none;
 .MenueBar ul>li {
 display: inline-flex;
 font-style: normal;
-font-size: 83%;
-padding-left: 7px;
+font-size: 1.5rem;
+padding-left: 0.7rem;
 }
 
 .MenueBar img{
-padding-left: 7px;
+padding-left: 0.7rem;
 }
 
 .MenueBar form{
-  padding-left: 70px;
+  padding-left: 7rem;
 }
 
 .top a{
@@ -68,7 +75,7 @@ text-decoration:none;
 }
 
 .HeadLine{
-font-size:200%;
+font-size: 3.5rem;
 }
 
 .Part1Con,.Part2Con,.Part3Con{
@@ -78,16 +85,20 @@ border: 1px solid black;
 }
 
 .mid .Part1{
-background-image:url("slide-bg-complexity.jpg");
+background-image:url("img/slide-bg-complexity.jpg");
 background-repeat: no-repeat;
 background-attachment: fixed;
 background-position:top;
 }
 
 .Part1 .HeadLine{
-padding-top:40px;
-width: 350px;
-padding-bottom: 15px;
+padding-top:4rem;
+width: 35rem;
+padding-bottom: 1.5rem;
+}
+
+.Part1 .Text{
+font-size: 2rem;
 }
 
 .Part1 .Text,.Part1 .HeadLine,.AdvertisForComverse{
@@ -96,38 +107,39 @@ color:white;
 
 .mid .Part1 .button{
   color: white;
-  width: 180px;
-  border-radius:4px;
+  width: 16rem;
+  border-radius:0.4rem;
   background-color:#0099FF;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  padding: 7px;
-}
-.mid .Part1 .button>a>img{
-  padding-left: 50px;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  padding: 0.7rem;
+  font-size: 1.5rem;
 }
 
+.mid .Part1 .button>a>img{
+  padding-left: 5rem;
+}
 
 .AdvertisForComverse{
-margin-top: 80px;
-padding-bottom: 20px;
+margin-top: 8rem;
+padding-bottom: 2rem;
 }
 
 .AdvertisForComverseBox1,.AdvertisForComverseBox2,.AdvertisForComverseBox3{
  display: inline-block;
- width:300px;
- height: 170px;
- border-radius: 5px;
+ width:30rem;
+ height: 17rem;
+ border-radius: 0.5rem;
  opacity: 0.7;
 
 }
-.AdvertisForComverseBox1Con,.AdvertisForComverseBox2Con,.AdvertisForComverseBox3Con{
-  padding-top: 17px;
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-bottom: 14px;
-  font-size: 160%;
 
+.AdvertisForComverseBox1Con,.AdvertisForComverseBox2Con,.AdvertisForComverseBox3Con{
+  padding-top: 1.7rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 1.4rem;
+font-size: 2.5rem;
 }
 
 .AdvertisForComverseBox1:hover,.AdvertisForComverseBox2:hover,.AdvertisForComverseBox3:hover{
@@ -139,23 +151,23 @@ padding-bottom: 20px;
 
 }
 .AdvertisForComverseBox2{
-  margin-left: 15px;
+  margin-left: 1.5rem;
   background-color: #72e600;
 }
 
 .AdvertisForComverseBox3{
-  margin-left: 15px;
+  margin-left: 1.5rem;
   background-color: #ff4000;
 }
 
 .ReadMoreClick{
-padding-left: 10px;
+padding-left: 1rem;
 display: inline-flex;
-  font-size: 120%;
+  font-size: 2rem;
 }
 
 .ReadMoreClick>span{
-padding-left: 5px;
+padding-left: 0.5rem;
 }
 
 /*             */
@@ -166,12 +178,12 @@ background: radial-gradient(#66d9ff,#0081ff)
 }
 
 .FirstBlock{
-  padding-left: 15px;
+  padding-left: 1.5rem; /* just some allignmet            */
 }
 
 .Part2 .HeadLine,.Part3 .HeadLine{
-  padding-top: 50px;
-  padding-bottom: 30px;
+  padding-top: 5rem;
+  padding-bottom: 3rem;
   text-align: center;
   color:white;
 }
@@ -179,33 +191,33 @@ background: radial-gradient(#66d9ff,#0081ff)
 .WWCDFU1,.WWCDFU2,.WWCDFU3,.WWCDFU4,.WWCDFU5,.WWCDFU6{
   display: inline-block;
   color:white;
-  width: 150px;
-  font-size: 110%;
+  width: 15rem;
+  font-size: 1.65rem;
   text-align:center;
 }
 
 .WWCDFU1:hover img {
-    content: url("solution_icon_biz-analitics_hover.png");
+    content: url("img/solution_icon_biz-analitics_hover.png");
   }
 
 .WWCDFU2:hover img {
-    content: url("solution_icon_diti-cx_hover.png");
+    content: url("img/solution_icon_diti-cx_hover.png");
   }
 
   .WWCDFU3:hover img {
-      content: url("solution_icon_smart-money_hover.png");
+      content: url("img/solution_icon_smart-money_hover.png");
     }
 
 .WWCDFU4:hover img {
-      content: url("solution_icon_optimize-efficnt_hover.png");
+      content: url("img/solution_icon_optimize-efficnt_hover.png");
     }
 
   .WWCDFU5:hover img {
-      content: url("solution_icon_personal_hover.png");
+      content: url("img/solution_icon_personal_hover.png");
   }
 
   .WWCDFU6:hover img {
-      content: url("solution_icon_biz-transform_hover.png");
+      content: url("img/solution_icon_biz-transform_hover.png");
   }
 
 .WWCDFU:hover{
@@ -213,31 +225,32 @@ background: radial-gradient(#66d9ff,#0081ff)
 }
 
 .WhatWeCanDoForYou{
-  padding-bottom: 35px;
+  padding-bottom: 3.5rem;
 }
 
 .buttonCon{
-padding-bottom: 40px;
+padding-bottom: 4rem;
 }
 
 .mid .Part2 .button{
 color: white;
-width: 190px;
+width: 19rem;
 margin: auto;
-border-radius:4px;
+border-radius:0.4rem;
 background-color:#0099FF;
-padding: 10px;
+padding: 1rem;
+font-size: 1.6rem;
 }
 
 .mid .Part2 .button>a>img{
-  padding-left: 20px;
+  padding-left: 2rem;
 }
 
 /*             */
 
 .Part3{
   clear:both;
-  background-image:url("news-and-events-bg.jpg");
+  background-image:url("img/news-and-events-bg.jpg");
   background-repeat: no-repeat;
   background-position:center center;
   background-attachment: fixed;
@@ -250,97 +263,93 @@ padding: 10px;
 }
 
 .EventsAndNews{
- padding-bottom: 40px;
+ padding-bottom: 4rem;
 }
 
 .link1 {
-padding-bottom: 4px;
+padding-bottom: 0.4rem;
 }
 
 .News,.Events{
   display: inline-block;
 }
 
-
 .EventsAndNewsHL1,.EventsAndNewsHL2,.EventsAndNewsHL3{
-padding-bottom: 10px;
+padding-bottom: 1rem;
 text-align: left;
 color:white;
-font-size: 150%;
+font-size: 2.5rem;
 }
 
 .Events{
-  margin-left: 10px;
+  margin-left: 1rem;
 }
 
 .box{
 background-color: rgba(204, 204, 204,0.5);
-width: 270px;
-border-radius: 2px;
-padding: 10px;
+width: 27rem;
+border-radius: 0.2rem;
+padding: 1rem;
 }
 
 .box:hover{
   background-color: rgba(204, 204, 204,1);
-
 }
 
 .date{
   background-color: #3399ff;
-  width: 70px;
-  border-radius: 2px;
+  width: 7rem;
+  border-radius: 0.2rem;
 }
 
 .day{
-  font-size: 300%;
+  font-size: 4.5rem;
   color: white;
   text-align: center;
 }
 
 .month{
-  font-size: 120%;
+  font-size: 2rem;
   color: white;
-  border-top: 1px white dashed;
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-top: 5px;
-  padding-bottom: 5px;
+  border-top: 0.1rem white dashed;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 
 .EventsAndNewsText{
-padding-left: 10px;
+padding-left: 1rem;
 color: black;
+font-size: 1.6rem;
 }
 
 .link1:hover img {
-    content: url("eventListIconNews_hover.png");
+    content: url("img/eventListIconNews_hover.png");
   }
 
 .link2:hover img {
-    content: url("eventListIconEvents_hover.png");
+    content: url("img/eventListIconEvents_hover.png");
   }
 
 .link3:hover img {
-    content: url("eventListIconPress_hover.png");
+    content: url("img/eventListIconPress_hover.png");
   }
 
-.link{
-  position: relative;
-  float: left;
-}
 
 .link1:hover .linkText,.link2:hover .linkText,.link3:hover .linkText {
 color: black;
 }
 
 .linkText{
-padding-top: 7px;
-padding-left: 5px;
+padding-top: 0.7rem;
+padding-left: 0.5rem;
 color: white;
+font-size: 1.5rem;
 }
 
 .EANlinkImage{
-  padding-top: 7px;
+  padding-top: 0.7rem;
 }
 
 /*             *//*             */
@@ -356,26 +365,26 @@ color: white;
 
 .bottomPart1 .HeadLine{
   text-align: center;
-  padding-top: 50px;
+  padding-top: 5rem;
 }
 
 .SCS{
-  margin-top: 50px;
+  margin-top: 5rem;
   display: inline-flex;
 }
 
 .SC1{
-  width:330px;
+  width:33rem;
 }
 
 .SC2{
-  width:330px;
-  margin-left: 15px;
+  width:33rem;
+  margin-left: 1.5rem;
 }
 
 .SC3{
-  margin-left: 15px;
-  width:215px;
+  margin-left: 1.5rem;
+  width:21.5rem;
 }
 
 .SC1Con,.SC3Con,.SC2Con{
@@ -387,46 +396,53 @@ color: white;
 }
 
 .SC1quote>img,.SC2quote>img{
-  margin:10px;
+  margin:1rem;
 }
 
 .SC1quoteCon,.SC2quoteCon{
-  margin:10px;
-  font-size: 110%;
+  margin:1rem;
+  font-size: 1.6rem;
 }
 
 .SC3quoteCon{
-    margin:10px;
-    font-size: 136%;
+    margin:1rem;
+    font-size: 2.06rem;
 }
 
 .SC-Info{
-  margin:10px;
-  border-top: 1px solid grey;
-  padding-top: 10px;
+  margin:1rem;
+  border-top: 0.1rem solid grey;
+  padding-top: 1rem;
   display:inline-flex;
 }
 
 .SC-name{
-  font-size: 84%;
-  color: blue;
+  font-size: 1.5rem;
+  color: #3baff7;
 }
 
 .SC-InfoCon>text{
-  font-size: 84%;
+  font-size: 1.4rem;
 }
 
-.SC-InfoImg{
-padding-left: 20px;
+.SC1 .SC-InfoImg{
+padding-left: 2.2rem;
+}
+
+.SC2 .SC-InfoImg{
+padding-left: 8rem;
+}
+
+.SC3 .SC-InfoImg{
+padding-left: 1rem;
 }
 
 .SC1 .logoContainer,.SC3 .logoContainer{
-  margin-top: 15px;
+  margin-top: 1.5rem;
 }
 
 .SC2 .logoContainer{
-  margin-bottom: 10px;
-
+  margin-bottom: 1rem;
 }
 
 .logo{
@@ -434,27 +450,27 @@ display: inline;
 }
 
 .logo>img{
-width:100px;
+width:10rem;
 }
 
 .logo+.logo{
-  padding-left: 10px;
+  padding-left: 1.2rem;
 }
 
-
 .bottomPart1 .button{
-  width: 200px;
+  width: 20rem;
   background-color:#0099FF;
-  padding: 10px;
+  padding: 1rem;
   color: white;
   margin: auto;
-  margin-top: 30px;
-  border-radius:4px;
+  margin-top: 3rem;
+  border-radius:0.4rem;
   clear:both;
+  font-size: 1.6rem;
 }
 
 .bottomPart1 .button>a>img{
-  padding-left: 20px;
+  padding-left: 2rem;
 }
 
 
@@ -477,18 +493,18 @@ display: inline-block;
 
 }
 
-
 .BottomListCon{
   display: inline-flex;
 }
 
 .BottomList+.BottomList{
-margin-left: 40px;
+margin-left: 4rem;
 }
 
 .BottomList{
-  padding-top: 20px;
-  padding-bottom: 50px;
+  padding-top: 2rem;
+  padding-bottom: 5rem;
+  font-size: 1.25rem;
 }
 
 .BottomList>ul{
@@ -501,70 +517,71 @@ margin-left: 40px;
 
 .BottomListHeader{
   color: white;
-  padding-bottom: 15px;
+  padding-bottom: 1.5rem;
+  font-size: 1.3em;
 }
 
-
 .WeLoveLikes{
-width: 300px;
-margin-left: 100px;
+width: 30rem;
+margin-left: 10rem;
 background-color: #404040;
 }
 
 .WeLoveLikesCon{
-width: 250px;
+width: 25rem;
 margin: auto;
-
 }
 
 .WeLoveLikes text{
   color: white;
-
 }
 
 .miniHeadLine{
 color:  #6cc3f9;
-padding-bottom: 20px;
+padding-bottom: 2rem;
 text-align: center;
-padding-top: 20px;
+padding-top: 2rem;
+font-size: 2rem;
 }
 
 .blogBox{
-  display: inline-flex;
-border-bottom: 1px solid white;
-padding-bottom: 10px;
+display: inline-flex;
+border-bottom: 0.1rem solid white;
+padding-bottom: 1rem;
 }
 
 .blogBox>text{
-  padding-left: 10px;
+  padding-left: 1rem;
+  font-size: 2rem;
+  padding-top: 1rem;
 }
 
 .blogBoxdate {
-width: 70px;
+width: 7rem;
 }
 
 .blogBoxday{
-  font-size: 270%;
+  font-size: 5rem;
   color: white;
   text-align: center;
 }
 
 .blogBoxmonth{
-  font-size: 160%;
+  font-size: 3rem;
   color: white;
   text-align: center;
 }
 
 .SIGNUPText{
-  width: 120px;
+  width: 17rem;
 }
 
 .SIGNUP{
-  width: 65px;
-  border-radius: 5px;
+  width: 6.5rem;
+  border-radius: 0.5rem;
   background-color:  #23a5f6;
   color: white;
-  padding: 4px;
+  padding: 0.4rem;
 }
 
 .SIGNUP:hover{
@@ -572,12 +589,13 @@ width: 70px;
 }
 
 .LikeUslogo{
-  padding-top: 40px;
+  padding-top: 4rem;
 }
 
 .CopyRight{
 position: relative;
-bottom:25px;
+bottom:2.5rem;
+color: #666666;
 }
 
 .CopyRightCon{
@@ -585,6 +603,7 @@ position: absolute;
 }
 
 .CopyRightCon>span{
-  margin-right: 10px;
-  margin-left: 10px;
+  margin-right: 1rem;
+  margin-left: 1rem;
+  font-size: 1.3rem;
 }
