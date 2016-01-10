@@ -193,8 +193,18 @@ position: relative;
 
 .WWCDFU:hover .hoverImg {
     display: block;
-
   }
+
+.WWCDFU:hover .img1{
+  padding-left: 4px;
+}
+
+.WWCDFU:hover .img2{
+  padding-left: 7px;
+}
+
+
+
 .WhatWeCanDoForYou{
   padding-bottom: 35px;
 }
