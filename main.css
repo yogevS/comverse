@@ -1,6 +1,6 @@
 
 html{
-font: normal 62.5%  Cambria, Georgia, serif;
+font: 62.5%  Cambria, Georgia, serif;
 
 }
 
@@ -81,7 +81,6 @@ font-size: 3.5rem;
 .Part1Con,.Part2Con,.Part3Con{
 margin: auto;
 width:940px;
-border: 1px solid black;
 }
 
 .mid .Part1{
@@ -127,12 +126,11 @@ padding-bottom: 2rem;
 
 .AdvertisForComverseBox1,.AdvertisForComverseBox2,.AdvertisForComverseBox3{
  display: inline-block;
- width:30rem;
- height: 17rem;
+ width:29rem;
  border-radius: 0.5rem;
  opacity: 0.7;
-
 }
+
 
 .AdvertisForComverseBox1Con,.AdvertisForComverseBox2Con,.AdvertisForComverseBox3Con{
   padding-top: 1.7rem;
@@ -148,8 +146,8 @@ font-size: 2.5rem;
 
 .AdvertisForComverseBox1{
   background-color: #FF00FF;
-
 }
+
 .AdvertisForComverseBox2{
   margin-left: 1.5rem;
   background-color: #72e600;
@@ -170,6 +168,59 @@ display: inline-flex;
 padding-left: 0.5rem;
 }
 
+
+
+@media screen and (max-width: 950px) {
+  .mid .Part1{
+    background-image: none;
+  }
+
+.mid .Part1 .mediaBGchange{
+background-color: #1a75ff;
+text-align:center;
+}
+
+ .mid .Part1 .mediaBGchangebutton{
+   background-image:url("img/slide-bg-complexity.jpg");
+   background-repeat: no-repeat;
+   background-position:top;
+   background-origin:content-box;
+
+ }
+
+.Part1 .HeadLine{
+  width: auto;
+}
+
+      .mid .Part1 .Text{
+        padding-bottom: 2rem;
+      }
+
+    .mid .Part1 .button{
+      margin-bottom: 0;
+      margin-top: 0;
+    }
+
+   .AdvertisForComverse{
+     margin-top: 0;
+
+   }
+
+  .AdvertisForComverseBox1,.AdvertisForComverseBox2,.AdvertisForComverseBox3{
+   display: block;
+   margin-left:0;
+   width: 100%;
+   margin-top: 1rem;
+   border-radius: 0;
+  }
+
+  .Part1Con,.Part2Con,.Part3Con{
+  margin: auto;
+  width:100%;
+  }
+}
+
+
 /*             */
 
 .mid .Part2{
@@ -189,11 +240,18 @@ background: radial-gradient(#66d9ff,#0081ff)
 }
 
 .WWCDFU1,.WWCDFU2,.WWCDFU3,.WWCDFU4,.WWCDFU5,.WWCDFU6{
-  display: inline-block;
   color:white;
   width: 15rem;
   font-size: 1.65rem;
   text-align:center;
+}
+
+.mid .Part2 .mediaAlignFix{
+  display: inline-block;
+}
+
+.mid .Part2 .mediaAlignInline{
+  display: inline-flex;
 }
 
 .WWCDFU1:hover img {
@@ -246,6 +304,21 @@ font-size: 1.6rem;
   padding-left: 2rem;
 }
 
+@media screen and (max-width: 950px) {
+
+ .mid .Part2 .mediaAlignFix{
+ margin:auto;
+width:46rem;
+display: block;
+ }
+
+ .WWCDFU1,.WWCDFU2,.WWCDFU3{
+
+
+ }
+
+}
+
 /*             */
 
 .Part3{
@@ -266,9 +339,6 @@ font-size: 1.6rem;
  padding-bottom: 4rem;
 }
 
-.link1 {
-padding-bottom: 0.4rem;
-}
 
 .News,.Events{
   display: inline-block;
@@ -351,6 +421,27 @@ font-size: 1.5rem;
 .EANlinkImage{
   padding-top: 0.7rem;
 }
+
+@media screen and (max-width: 950px) {
+  .News,.Events{
+    display: block;
+  }
+
+.box{
+width: 90%;
+}
+
+.EventsAndNewsHL1,.EventsAndNewsHL2,.EventsAndNewsHL3{
+  font-size: 3rem;
+  padding-top: 1em;
+}
+
+.EventsAndNewsText{
+font-size: 2.3em;
+}
+
+}
+
 
 /*             *//*             */
 
