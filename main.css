@@ -1,0 +1,40 @@
+
+.top {
+
+  border: 2px solid black;
+  margin-bottom: 5px;
+}
+
+.mid{
+  clear:both;
+  border: 2px solid black;
+  margin-top: 5px;
+ margin-bottom: 5px;
+}
+
+.bottom{
+  margin-top: 5px;
+  border: 2px solid black;
+}
+
+.LangueAndUser{
+  float: right;
+
+}
+
+.MenueBar>ul>li{
+display: inline;
+}
+
+.Part1{
+border: 2px solid red;
+
+}
+.Part2{
+border: 2px solid red;
+
+}
+.Part3{
+border: 2px solid red;
+
+}
