@@ -1,9 +1,7 @@
 
 html{
 font: 62.5%  Cambria, Georgia, serif;
-
 }
-
 
 .top {
   margin-bottom: 0.5rem;
@@ -21,6 +19,7 @@ font: 62.5%  Cambria, Georgia, serif;
 .ContentWrapper{
   width: 940px;
   margin: auto;
+  border: 1px solid black;
 }
 
 /*             *//*             */
@@ -32,10 +31,6 @@ font-size: 1.5rem;
 
 .Langue,.userLogin{
   display: inline;
-}
-
-.Comverselogo{
-
 }
 
 .MenueBar{
@@ -68,6 +63,19 @@ color: black;
 text-decoration:none;
 }
 
+.top a:hover{
+text-decoration: underline;
+}
+
+
+@media screen and (max-width: 950px) {
+  .ContentWrapper{
+  margin: auto;
+  width:100%;
+  }
+}
+
+
 /*             *//*             */
 .mid .Part1 a,.mid .Part2 a{
   color: white;
@@ -81,6 +89,7 @@ font-size: 3.5rem;
 .Part1Con,.Part2Con,.Part3Con{
 margin: auto;
 width:940px;
+
 }
 
 .mid .Part1{
@@ -117,6 +126,10 @@ color:white;
 
 .mid .Part1 .button>a>img{
   padding-left: 5rem;
+}
+
+.mid .Part1 .button:hover{
+  text-decoration: underline;
 }
 
 .AdvertisForComverse{
@@ -169,8 +182,13 @@ padding-left: 0.5rem;
 }
 
 
-
 @media screen and (max-width: 950px) {
+
+  .Part1Con,.Part2Con,.Part3Con{
+  margin: auto;
+  width:100%;
+  }
+
   .mid .Part1{
     background-image: none;
   }
@@ -214,10 +232,7 @@ text-align:center;
    border-radius: 0;
   }
 
-  .Part1Con,.Part2Con,.Part3Con{
-  margin: auto;
-  width:100%;
-  }
+
 }
 
 
@@ -253,6 +268,10 @@ background: radial-gradient(#66d9ff,#0081ff)
 .mid .Part2 .mediaAlignInline{
   display: inline-flex;
 }
+
+.WWCDFU4 img {
+      padding-left: 2rem; /* just some allignmet  for img    */
+    }
 
 .WWCDFU1:hover img {
     content: url("img/solution_icon_biz-analitics_hover.png");
@@ -302,6 +321,10 @@ font-size: 1.6rem;
 
 .mid .Part2 .button>a>img{
   padding-left: 2rem;
+}
+
+.mid .Part2 .button:hover{
+  text-decoration: underline;
 }
 
 @media screen and (max-width: 950px) {
@@ -478,8 +501,35 @@ font-size: 2.3em;
   width:21.5rem;
 }
 
+
+.SC1Con{
+  height: 20rem;
+  display: block;
+  width: 33rem;
+
+}
+
+.SC1Con{
+transition: 1s;
+transition-timing-function: ease;
+}
+
+.SC1Con:hover{
+transform: translateY(-10rem) scaleY(0);
+}
+
+.SC1ConOP{
+  background-image: url("img/logos_generic_2nd_side_cut_02_w108px_x_h95px.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position:center center;
+}
+
+
+
 .SC1Con,.SC3Con,.SC2Con{
   background-color: white;
+  display: block;
 }
 
 .SC1quote,.SC2quote,.SC3quote{
@@ -564,24 +614,34 @@ width:10rem;
   padding-left: 2rem;
 }
 
+.bottomPart1 .button:hover{
+  text-decoration: underline;
+}
+
+
+
+
 
 /*             */
+
+
 
 .bottomPart2{
 clear:both;
 background-color: #262626;
 }
 
-.bottom .Part2Con{
+.bottomPart2 a{
+  text-decoration: none;
+    color: white;
+}
 
+.bottomPart2 a:hover{
+  text-decoration: underline;
 }
 
 .BottomList{
 display: inline-block;
-}
-
-.BottomList>ul>li{
-
 }
 
 .BottomListCon{
@@ -591,6 +651,7 @@ display: inline-block;
 .BottomList+.BottomList{
 margin-left: 4rem;
 }
+
 
 .BottomList{
   padding-top: 2rem;
@@ -602,14 +663,13 @@ margin-left: 4rem;
   margin: 0;
   padding: 0;
   list-style-type: none;
-   color: white;
-
+color: white;
 }
 
 .BottomListHeader{
   color: white;
-  padding-bottom: 1.5rem;
-  font-size: 1.3em;
+  font-size: 1.1em;
+  padding-bottom: 1rem;
 }
 
 .WeLoveLikes{
