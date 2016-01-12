@@ -19,10 +19,20 @@ font: 62.5%  Cambria, Georgia, serif;
 .ContentWrapper{
   width: 940px;
   margin: auto;
-  border: 1px solid black;
+
 }
 
 /*             *//*             */
+
+.top a{
+color: black;
+text-decoration:none;
+}
+
+.top a:hover{
+text-decoration: underline;
+}
+
 
 .LangueAndUser{
 float: right;
@@ -32,6 +42,82 @@ font-size: 1.5rem;
 .Langue,.userLogin{
   display: inline;
 }
+
+/*   top media  html/css */
+.topMedia{
+  display: none;
+}
+
+.topMediaSpace{
+  width: 100%;
+}
+
+.IconBox{
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 0.3rem;
+  background-color: #d9d9d9;
+  padding-left: 1rem;
+  padding-top: 1rem;
+}
+
+.menu_label,.search_label{
+  cursor: pointer;
+}
+
+.menu_label + input[type=checkbox] ,.search_label + input[type=checkbox] {
+      display: none;           /* checkboxes invisible and use no space */
+     }
+
+.menu_label + input[type=checkbox] + .MenueBarMedia,.search_label + input[type=checkbox] + .searchMedia{
+  display: none;
+}
+
+.menu_label + input[type=checkbox]:checked + .MenueBarMedia,.search_label + input[type=checkbox]:checked + .searchMedia{
+  display: block;
+}
+
+.MenueBarMedia ul{
+  margin: 0;
+  padding: 0;
+  left: 0;
+  list-style-type: none;
+   position: absolute;
+   background-color: white;
+   width: 95%;
+   z-index: 1;
+}
+
+.MenueBarMedia ul>a>li {
+font-style: normal;
+font-size: 2rem;
+padding-left: 0.7rem;
+border-bottom: 1px solid #999999;
+}
+
+
+
+.searchMedia{
+margin-top: 3.8rem;
+left: 0;
+position: absolute;
+width: 100%;
+height: 2rem;
+z-index: 0;
+}
+
+.searchMediaCon{
+  margin: auto;
+  width: 40rem;
+}
+
+.searchMedia input{
+width: 40rem;
+height: 3rem;
+}
+
+
+/*      end to media html/css   */
 
 .MenueBar{
 clear:both;
@@ -54,17 +140,28 @@ padding-left: 0.7rem;
 padding-left: 0.7rem;
 }
 
-.MenueBar form{
-  padding-left: 7rem;
+.search{
+  margin-left: 7.5rem;
+  border: 1px solid #737373;
+  border-radius: 0.3rem;
+  width: 17rem;
+  height: 2rem;
 }
 
-.top a{
-color: black;
-text-decoration:none;
+.search input{
+border-style: none;
+outline: none;
+ overflow:hidden;
+ width: 14.2rem;
+ box-shadow: none;
+ height: 2rem;
 }
 
-.top a:hover{
-text-decoration: underline;
+.search img{
+top: 8rem;
+position: absolute;
+z-index: 1;
+height: 2rem;
 }
 
 
@@ -73,7 +170,30 @@ text-decoration: underline;
   margin: auto;
   width:100%;
   }
+
+.top{
+  margin-bottom: 5rem;
 }
+
+.LangueAndUser ,.MenueBar{
+  display: none;
+}
+
+.Comverselogo dasd img{
+  content: url(img/comverse-logo-medium.png);
+}
+
+.topMedia{
+  display: block;
+}
+
+.topMediaCon{
+  display:inline-flex; ;
+  width: 100%;
+
+}
+
+}/* top media   */
 
 
 /*             *//*             */
@@ -89,7 +209,7 @@ font-size: 3.5rem;
 .Part1Con,.Part2Con,.Part3Con{
 margin: auto;
 width:940px;
-border: 1px solid black;
+
 }
 
 .mid .Part1{
@@ -524,10 +644,7 @@ transform: translateY(-10rem) scaleY(0);
 }
 
 .SC1ConOP,.SC2ConOP,.SC3ConOP{
-  background-image: url("img/logos_generic_2nd_side_cut_02_w108px_x_h95px.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position:center center;
+background-color: #1a75ff;
 }
 
 
