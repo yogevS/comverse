@@ -89,7 +89,7 @@ font-size: 3.5rem;
 .Part1Con,.Part2Con,.Part3Con{
 margin: auto;
 width:940px;
-
+border: 1px solid black;
 }
 
 .mid .Part1{
@@ -333,7 +333,12 @@ font-size: 1.6rem;
  margin:auto;
 width:46rem;
 display: block;
+
  }
+
+.mid .Part2 .mediaAlignFix+.mediaAlignFix{
+margin-top:3rem;
+}
 
  .WWCDFU1,.WWCDFU2,.WWCDFU3{
 
@@ -468,8 +473,13 @@ font-size: 2.3em;
 
 /*             *//*             */
 
-.bottomPart1 a{
+.bottomPart1 .button a{
   color: white;
+  text-decoration:none;
+}
+
+.bottomPart1  a{
+color: black;
   text-decoration:none;
 }
 
@@ -488,49 +498,38 @@ font-size: 2.3em;
 }
 
 .SC1{
-  width:33rem;
+  width:34rem;
 }
 
 .SC2{
-  width:33rem;
+  width:34rem;
   margin-left: 1.5rem;
 }
 
 .SC3{
   margin-left: 1.5rem;
-  width:21.5rem;
+  width:22rem;
 }
 
-
-.SC1Con{
-  height: 20rem;
+.SC1Con,.SC3Con,.SC2Con{
+  background-color: white;
   display: block;
-  width: 33rem;
-
+  transition: 1s;
+  transition-timing-function: ease;
+  height: 20rem;
 }
 
-.SC1Con{
-transition: 1s;
-transition-timing-function: ease;
-}
-
-.SC1Con:hover{
+.SC1Con:hover,.SC2Con:hover,.SC3Con:hover{
 transform: translateY(-10rem) scaleY(0);
 }
 
-.SC1ConOP{
+.SC1ConOP,.SC2ConOP,.SC3ConOP{
   background-image: url("img/logos_generic_2nd_side_cut_02_w108px_x_h95px.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position:center center;
 }
 
-
-
-.SC1Con,.SC3Con,.SC2Con{
-  background-color: white;
-  display: block;
-}
 
 .SC1quote,.SC2quote,.SC3quote{
   display: inline-flex;
@@ -578,24 +577,47 @@ padding-left: 8rem;
 padding-left: 1rem;
 }
 
-.SC1 .logoContainer,.SC3 .logoContainer{
+.SC1 .logoContainer,.SC3 .logoContainer,.SC2 .logoContainer2{
   margin-top: 1.5rem;
 }
 
 .SC2 .logoContainer{
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
 }
 
 .logo{
-display: inline;
+  display: block;
+  transition: 1s;
+  transition-timing-function: ease;
+  height: 10.3rem;
+}
+
+.logo:hover{
+transform: translateY(-5.15rem) scaleY(0);
+}
+
+.logoConOP{
+  background-image: url("img/logos_generic_2nd_side_cut_02_w108px_x_h95px.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position:center center;
+}
+
+.logoContainer{
+display: inline-flex;
+}
+
+.logoContainer2{
+  display: none;
 }
 
 .logo>img{
-width:10rem;
+width: 10.3rem;
+height: 10.3rem;
 }
 
-.logo+.logo{
-  padding-left: 1.2rem;
+.logoContainer a+a,.logoContainer2 a+a{
+  margin-left: 1.5rem;
 }
 
 .bottomPart1 .button{
@@ -618,12 +640,49 @@ width:10rem;
   text-decoration: underline;
 }
 
+@media screen and (max-width: 950px) {
+
+  .SCS{
+    display: block;
+  }
+
+.SC3{
+  display: none;
+}
+
+.SC1,.SC2{
+  margin: auto;
+  width: 44rem;
+}
+
+.logo{
+height:13.66rem;
+}
+
+.logo:hover{
+transform: translateY(-6.83rem) scaleY(0);
+}
+
+.logo>img{
+width:  13.66rem;
+height: 13.66rem;
+}
+
+.SC2{
+  margin-top: 1.5rem;
+}
+
+.logoConMedia{
+  display: none;
+}
+.logoContainer2{
+  display: inline-flex;
+}
+
+}/* media for bottomPart1   */
 
 
-
-
-/*             */
-
+/*  end bottomPart1           */
 
 
 .bottomPart2{
