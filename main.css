@@ -77,6 +77,7 @@ font-size: 1.5rem;
   display: block;
 }
 
+
 .MenueBarMedia ul{
   margin: 0;
   padding: 0;
@@ -96,7 +97,6 @@ border-bottom: 1px solid #999999;
 }
 
 
-
 .searchMedia{
 margin-top: 3.8rem;
 left: 0;
@@ -108,11 +108,11 @@ z-index: 0;
 
 .searchMediaCon{
   margin: auto;
-  width: 40rem;
+  width: 30rem;
 }
 
 .searchMedia input{
-width: 40rem;
+width: 30rem;
 height: 3rem;
 }
 
@@ -301,6 +301,9 @@ display: inline-flex;
 padding-left: 0.5rem;
 }
 
+.mid .Part1 .arrowMedia{
+  display: none;
+}
 
 @media screen and (max-width: 950px) {
 
@@ -314,8 +317,9 @@ padding-left: 0.5rem;
   }
 
 .mid .Part1 .mediaBGchange{
-background-color: #1a75ff;
-text-align:center;
+background-color: #007fff;
+opacity: 0.6;
+
 }
 
  .mid .Part1 .mediaBGchangebutton{
@@ -341,7 +345,6 @@ text-align:center;
 
    .AdvertisForComverse{
      margin-top: 0;
-
    }
 
   .AdvertisForComverseBox1,.AdvertisForComverseBox2,.AdvertisForComverseBox3{
@@ -350,8 +353,20 @@ text-align:center;
    width: 100%;
    margin-top: 1rem;
    border-radius: 0;
+   cursor: pointer;
   }
 
+.ReadMoreClick{
+  clear: both;
+  margin-top:3rem;
+}
+
+.mid .Part1 .arrowMedia{
+  display: block;
+  float: right;
+  margin-right: 2rem;
+  cursor: pointer;
+}
 
 }
 
@@ -379,6 +394,7 @@ background: radial-gradient(#66d9ff,#0081ff)
   width: 15rem;
   font-size: 1.65rem;
   text-align:center;
+
 }
 
 .mid .Part2 .mediaAlignFix{
@@ -418,7 +434,7 @@ background: radial-gradient(#66d9ff,#0081ff)
   }
 
 .WWCDFU:hover{
-      cursor: pointer;
+  cursor: pointer;
 }
 
 .WhatWeCanDoForYou{
@@ -460,10 +476,32 @@ display: block;
 margin-top:3rem;
 }
 
- .WWCDFU1,.WWCDFU2,.WWCDFU3{
-
+ .FirstBlock{
+padding-left: 0;
 
  }
+
+}/* media part 1   */
+
+@media screen and (max-width: 490px) {
+
+.mid .Part2 .mediaAlignFix{
+  width:33rem;
+}
+
+.WWCDFU4 img {
+      padding-left: 0; /* just some allignmet  for img    */
+    }
+
+.WWCDFU1,.WWCDFU2,.WWCDFU3,.WWCDFU4,.WWCDFU5,.WWCDFU6{
+  width: 11rem;
+  font-size: 1.2rem;
+
+}
+
+.WWCDFU1 img,.WWCDFU2 img,.WWCDFU3 img,.WWCDFU4,.WWCDFU5,.WWCDFU6{
+  width: 11rem;
+}
 
 }
 
@@ -757,6 +795,10 @@ height: 10.3rem;
   text-decoration: underline;
 }
 
+.ScrollToTop{
+  margin-left: 10rem;
+}
+
 @media screen and (max-width: 950px) {
 
   .SCS{
@@ -796,7 +838,40 @@ height: 13.66rem;
   display: inline-flex;
 }
 
-}/* media for bottomPart1   */
+.ScrollToTop{
+  width: 100%;
+  display:inline-flex;
+  margin-left: 0;
+}
+
+.ScrollToTop .ScrollToTopSpace{
+  width: 75%;
+}
+
+}/* media part 1 for bottomPart1   */
+
+@media screen and (max-width: 490px) { /* shrink SS  */
+  .SC1,.SC2{
+    width:34rem;
+  }
+
+  .logo{
+  height: 10.3rem;
+  }
+
+  .logo:hover{
+  transform: translateY(-5.15rem) scaleY(0);
+  }
+
+  .logo>img{
+  width:  10.3rem;
+   height: 10.3rem;
+  }
+
+
+}
+
+/* media for bottomPart1   */
 
 
 /*  end bottomPart1           */
@@ -919,6 +994,18 @@ width: 7rem;
   padding-top: 4rem;
 }
 
+.LikeUslogo #m1:hover{
+  content: url(img/socialMenuIcon-youtube_hover.png);
+}
+
+.LikeUslogo #m2:hover{
+  content: url(img/socialMenuIcon-twitter_hover.png);
+}
+
+.LikeUslogo #m3:hover{
+  content: url(img/socialMenuIcon-linkdin_hover.png);
+}
+
 .CopyRight{
 position: relative;
 bottom:2.5rem;
@@ -934,3 +1021,62 @@ position: absolute;
   margin-left: 1rem;
   font-size: 1.3rem;
 }
+
+.BottomListConMedia{
+  display: none;
+}
+
+
+@media screen and (max-width: 950px) {
+
+.BottomListCon{
+  display: none;
+}
+
+.BottomListConMedia{
+width: 100%;
+display: block;
+}
+
+.BottomListMedia{
+  font-size: 2.3rem;
+  color: white;
+  border-top: 0.1rem solid black;
+  border-bottom: 0.1rem solid black;
+}
+
+.BLMText{
+  margin: 1rem;
+}
+
+.LikeUslogo{
+  padding-top: 0;
+  display: inline-flex;
+}
+
+.LikeUslogo a{
+  margin-left: 2rem;
+  height: 2rem;
+}
+
+.BottomListMedia select{
+  height: 2.5rem;
+  width: 5rem;
+  margin-left: 4rem;
+  background-color: #808080;
+  color: white;
+}
+
+
+.CopyRight{
+position:relative;
+bottom:0rem;
+color: #666666;
+text-align: center;
+}
+
+.CopyRightCon{
+position: relative;
+}
+
+}/* media for bottomPart2   */
