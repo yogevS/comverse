@@ -19,7 +19,13 @@ font: 62.5%  Cambria, Georgia, serif;
 .ContentWrapper{
   width: 940px;
   margin: auto;
+}
 
+@media screen and (max-width: 940px) {
+  .ContentWrapper{
+  margin: auto;
+  width:100%;
+  }
 }
 
 /*             *//*             */
@@ -128,38 +134,50 @@ height: 3rem;
 
 .MenueBar{
 clear:both;
+width: 100%;
+
+}
+
+.MenueBarCon{
+display: inline-flex;
+width: 80%;
 }
 
 .MenueBar ul{
 margin: 0;
 padding: 0;
 list-style-type: none;
+display: inline;
 }
 
 .MenueBar ul>li {
-display: inline-flex;
-font-style: normal;
-font-size: 1.5rem;
-padding-left: 0.7rem;
+display: inline-flex;;
 }
 
-.MenueBar img{
-padding-left: 0.7rem;
+.MenueBarFix{
+display: inline-flex;
+}
+
+.MenueBarFix li{
+display: inline-flex;
+  font-style: normal;
+  font-size: 1.5rem;
+  padding-left: 0.5rem;
 }
 
 .search{
-  margin-left: 7.5rem;
   border: 1px solid #737373;
   border-radius: 0.3rem;
-  width: 17rem;
+  width: 19%;
   height: 2rem;
+display: inline-flex;
 }
 
 .search input{
 border-style: none;
 outline: none;
  overflow:hidden;
- width: 14.2rem;
+ width: 85%;
  box-shadow: none;
  height: 2rem;
 }
@@ -171,8 +189,28 @@ z-index: 1;
 height: 1.5rem;
 }
 
+@media screen and (max-width: 830px) {
+.MenueBarFix li{
+font-size: 1.2rem;
+}
 
-@media screen and (max-width: 950px) {
+.Comverselogo img{
+  content: url("img/comverse-logo-medium.png");
+}
+
+.search img{
+top: 5.8rem;
+}
+
+}
+
+@media screen and (max-width:625px) {
+  .MenueBarFix li{
+  font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
   .ContentWrapper{
   margin: auto;
   width:100%;
@@ -186,10 +224,9 @@ height: 1.5rem;
   display: none;
 }
 
-.Comverselogo dasd img{
-  content: url(img/comverse-logo-medium.png);
+.Comverselogo img{
+  content: url("img/comverse-logo.png");
 }
-
 .topMedia{
   display: block;
 }
@@ -208,9 +245,15 @@ height: 1.5rem;
 .Part1Con,.Part2Con,.Part3Con{
 margin: auto;
 width:940px;
-
 }
 
+@media screen and (max-width: 940px) {
+
+  .Part1Con,.Part2Con,.Part3Con{
+  width:100%;
+}
+
+}
 
 
 .mid .Part1 a,.mid .Part2 a{
@@ -270,8 +313,9 @@ padding-bottom: 2rem;
 }
 
 .AdvertisForComverseBox1,.AdvertisForComverseBox2,.AdvertisForComverseBox3{
- display: inline-block;
- width:29rem;
+ display: inline-flex;
+ width:30%;
+ height: 15rem;
  border-radius: 0.5rem;
  opacity: 0.7;
 }
@@ -281,8 +325,8 @@ padding-bottom: 2rem;
   padding-top: 1.7rem;
   padding-left: 1rem;
   padding-right: 1rem;
-  padding-bottom: 1.4rem;
-font-size: 2.5rem;
+  padding-bottom: 1.5rem;
+   font-size: 2.3rem;
 }
 
 .AdvertisForComverseBox1:hover,.AdvertisForComverseBox2:hover,.AdvertisForComverseBox3:hover{
@@ -294,12 +338,12 @@ font-size: 2.5rem;
 }
 
 .AdvertisForComverseBox2{
-  margin-left: 1.5rem;
+  margin-left: 4%;
   background-color: #72e600;
 }
 
 .AdvertisForComverseBox3{
-  margin-left: 1.5rem;
+  margin-left: 4%;
   background-color: #ff4000;
 }
 
@@ -317,7 +361,23 @@ padding-left: 0.5rem;
   display: none;
 }
 
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 940px) {
+  .AdvertisForComverseBox1Con,.AdvertisForComverseBox2Con,.AdvertisForComverseBox3Con
+  ,.ReadMoreClick{
+  font-size: 2rem;
+  }
+}
+
+
+@media screen and (max-width: 740px) {
+  .AdvertisForComverseBox1Con,.AdvertisForComverseBox2Con,.AdvertisForComverseBox3Con
+  ,.ReadMoreClick{
+  font-size: 1.7rem;
+  }
+}
+
+
+@media screen and (max-width: 600px) {
 
   .Part1Con,.Part2Con,.Part3Con{
   margin: auto;
@@ -366,11 +426,18 @@ opacity: 0.6;
    margin-top: 1rem;
    border-radius: 0;
    cursor: pointer;
+   font-size: 2.3rem;
+  }
+
+  .AdvertisForComverseBox1Con,.AdvertisForComverseBox2Con,.AdvertisForComverseBox3Con{
+  font-size: 2.3rem;
+
   }
 
 .ReadMoreClick{
   clear: both;
   margin-top:3rem;
+  font-size: 2rem;
 }
 
 .mid .Part1 .arrowMedia{
@@ -390,9 +457,6 @@ clear:both;
 background: radial-gradient(#66d9ff,#0081ff)
 }
 
-.FirstBlock{
-  padding-left: 1.5rem; /* just some allignmet            */
-}
 
 .Part2 .HeadLine,.Part3 .HeadLine{
   padding-top: 5rem;
@@ -401,20 +465,25 @@ background: radial-gradient(#66d9ff,#0081ff)
   color:white;
 }
 
-.WWCDFU1,.WWCDFU2,.WWCDFU3,.WWCDFU4,.WWCDFU5,.WWCDFU6{
-  color:white;
-  width: 15rem;
-  font-size: 1.65rem;
-  text-align:center;
-
+.WhatWeCanDoForYou{
+  padding-bottom: 3.5rem;
+  display: inline-flex;
 }
 
-.mid .Part2 .mediaAlignFix{
-  display: inline-block;
+.WWCDFU1,.WWCDFU2,.WWCDFU3,.WWCDFU4,.WWCDFU5,.WWCDFU6{
+  color:white;
+  width: 33%;
+  font-size: 1.65rem;
+  text-align:center;
+}
+
+.WWCDFU1 img,.WWCDFU2 img,.WWCDFU3 img,.WWCDFU4 img,.WWCDFU5 img,.WWCDFU6 img{
+  width: 100%;
 }
 
 .mid .Part2 .mediaAlignInline{
   display: inline-flex;
+  width: 100%;
 }
 
 .WWCDFU4 img {
@@ -449,9 +518,6 @@ background: radial-gradient(#66d9ff,#0081ff)
   cursor: pointer;
 }
 
-.WhatWeCanDoForYou{
-  padding-bottom: 3.5rem;
-}
 
 .buttonCon{
 padding-bottom: 4rem;
@@ -468,25 +534,19 @@ font-size: 1.6rem;
 }
 
 .mid .Part2 .button>a>img{
-  padding-left: 2rem;
+  padding-left: 1rem;
 }
 
 .mid .Part2 .button:hover{
   text-decoration: underline;
 }
 
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 600px) {
 
- .mid .Part2 .mediaAlignFix{
- margin:auto;
-width:46rem;
-display: block;
-
- }
-
-.mid .Part2 .mediaAlignFix+.mediaAlignFix{
-margin-top:3rem;
-}
+  .WhatWeCanDoForYou{
+    padding-bottom: 3.5rem;
+    display: block;
+  }
 
  .FirstBlock{
 padding-left: 0;
@@ -495,27 +555,6 @@ padding-left: 0;
 
 }/* media part 1   */
 
-@media screen and (max-width: 490px) {
-
-.mid .Part2 .mediaAlignFix{
-  width:33rem;
-}
-
-.WWCDFU4 img {
-      padding-left: 0; /* just some allignmet  for img    */
-    }
-
-.WWCDFU1,.WWCDFU2,.WWCDFU3,.WWCDFU4,.WWCDFU5,.WWCDFU6{
-  width: 11rem;
-  font-size: 1.2rem;
-
-}
-
-.WWCDFU1 img,.WWCDFU2 img,.WWCDFU3 img,.WWCDFU4,.WWCDFU5,.WWCDFU6{
-  width: 11rem;
-}
-
-}
 
 /*             */
 
@@ -540,6 +579,7 @@ padding-left: 0;
 
 .News,.Events{
   display: inline-block;
+  width: 32%;
 }
 
 .EventsAndNewsHL1,.EventsAndNewsHL2,.EventsAndNewsHL3{
@@ -549,13 +589,10 @@ color:white;
 font-size: 2.5rem;
 }
 
-.Events{
-  margin-left: 1rem;
-}
 
 .box{
 background-color: rgba(204, 204, 204,0.5);
-width: 27rem;
+width: 85%;
 border-radius: 0.2rem;
 padding: 1rem;
 }
@@ -620,14 +657,12 @@ font-size: 1.5rem;
   padding-top: 0.7rem;
 }
 
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 600px) {
   .News,.Events{
     display: block;
+    width: 100%
   }
 
-.box{
-width: 90%;
-}
 
 .EventsAndNewsHL1,.EventsAndNewsHL2,.EventsAndNewsHL3{
   font-size: 3rem;
@@ -665,20 +700,25 @@ color: black;
 .SCS{
   margin-top: 5rem;
   display: inline-flex;
+  width: 100%;
+}
+
+.SCSCon{
+display: inline-flex;
 }
 
 .SC1{
-  width:34rem;
+  width:36%;
 }
 
 .SC2{
-  width:34rem;
+  width:36%;
   margin-left: 1.5rem;
 }
 
 .SC3{
   margin-left: 1.5rem;
-  width:22rem;
+  width:24%;
 }
 
 .SC1Con,.SC3Con,.SC2Con{
@@ -687,6 +727,7 @@ color: black;
   transition: 1s;
   transition-timing-function: ease;
   height: 20rem;
+  width: 100%;
 
 }
 
@@ -696,7 +737,6 @@ transform: translateY(-10rem) scaleY(0);
 
 .SC1ConOP,.SC2ConOP,.SC3ConOP{
 background-color: #1a75ff;
-
 }
 
 
@@ -781,8 +821,8 @@ display: inline-flex;
 }
 
 .logo>img{
-width: 10.3rem;
-height: 10.3rem;
+width: 100%;
+height: 100%;
 }
 
 .logoContainer a+a,.logoContainer2 a+a{
@@ -821,9 +861,88 @@ height: 10.3rem;
   transform: translateY(-2rem);
 }
 
-@media screen and (max-width: 950px) {
 
-  .SCS{
+@media screen and (max-width: 940px) { /* shrink SS  */
+
+.SCSCon{
+  margin: auto;
+}
+
+  .SC1,.SC2,.SC1Con,.SC2Con{
+    width:21.8rem;
+  }
+  .SC3,.SC3Con{
+    width: 14.2rem;
+  }
+
+  .SC2,.SC3{
+  margin-left: 1rem;
+}
+
+.SC1 .logoContainer,.SC3 .logoContainer{
+  margin-top: 1rem;
+}
+
+.SC2 .logoContainer{
+  margin-bottom: 1rem;
+}
+
+
+.SC1quote>img,.SC2quote>img{
+height: 10rem;
+}
+
+.SC1quoteCon,.SC2quoteCon{
+  margin:0.7rem;
+  font-size: 1.2rem;
+}
+
+.SC3quoteCon{
+    margin:0.7rem;
+    font-size: 1.5rem;
+}
+
+.SC-name{
+  font-size: 1.2rem;
+
+}
+
+.SC-InfoCon>text{
+  font-size: 1.1rem;
+}
+
+.SC2 .SC-InfoImg{
+padding-left: 5rem;
+}
+
+
+.SC3 .SC-InfoImg img{
+width: 4rem;
+}
+
+.logoContainer a+a{
+  margin-left: 1rem;
+}
+
+  .logo{
+  height: 6.62rem;
+  }
+
+  .logo:hover{
+  transform: translateY(-3.31rem) scaleY(0);
+  }
+
+  .logo>img{
+  width:  6.62rem;
+   height: 6.62rem;
+  }
+
+}
+
+
+@media screen and (max-width: 600px) {
+
+  .SCSCon{
     display: block;
   }
 
@@ -834,6 +953,18 @@ height: 10.3rem;
 .SC1,.SC2{
   margin: auto;
   width: 44rem;
+}
+
+.SC1Con,.SC2Con{
+  width: 44rem;
+}
+
+.SC1 .logoContainer{
+  margin-top: 1.5rem;
+}
+
+.logoContainer a+a{
+  margin-left: 1.5rem;
 }
 
 .logo{
@@ -851,6 +982,31 @@ height: 13.66rem;
 
 .SC2{
   margin-top: 1.5rem;
+}
+
+.SC1quote>img,.SC2quote>img{
+height:auto;
+}
+
+.SC1quoteCon,.SC2quoteCon{
+  margin:1rem;
+  font-size: 1.6rem;
+}
+
+.SC-name{
+  font-size: 1.5rem;
+}
+
+.SC-InfoCon>text{
+  font-size: 1.4rem;
+}
+
+.SC1 .SC-InfoImg{
+padding-left: 8rem;
+}
+
+.SC2 .SC-InfoImg{
+padding-left: 12rem;
 }
 
 .logoConMedia{
@@ -879,6 +1035,10 @@ height: 13.66rem;
 @media screen and (max-width: 490px) { /* shrink SS  */
   .SC1,.SC2{
     width:34rem;
+  }
+
+  .SC1Con,.SC2Con{
+    width: 100%;
   }
 
   .logo{
@@ -923,10 +1083,8 @@ display: inline-block;
 
 .BottomListCon{
   display: inline-flex;
-}
+  width: 100%;
 
-.BottomList+.BottomList{
-margin-left: 4rem;
 }
 
 
@@ -934,6 +1092,7 @@ margin-left: 4rem;
   padding-top: 2rem;
   padding-bottom: 5rem;
   font-size: 1.25rem;
+  width: 23%;
 }
 
 .BottomList>ul{
@@ -950,13 +1109,12 @@ color: white;
 }
 
 .WeLoveLikes{
-width: 30rem;
-margin-left: 10rem;
+width:30%;
 background-color: #404040;
 }
 
 .WeLoveLikesCon{
-width: 25rem;
+width: 95%;
 margin: auto;
 }
 
@@ -1000,12 +1158,16 @@ width: 7rem;
   text-align: center;
 }
 
+.LikeUs{
+  width: 100%;
+}
+
 .SIGNUPText{
-  width: 17rem;
+  width: 60%;
 }
 
 .SIGNUP{
-  width: 6.5rem;
+  width: 30%;
   border-radius: 0.5rem;
   background-color:  #23a5f6;
   color: white;
@@ -1052,8 +1214,32 @@ position: absolute;
   display: none;
 }
 
+@media screen and (max-width: 770px) {
 
-@media screen and (max-width: 950px) {
+  .blogBox>text{
+    font-size: 1.5rem;
+  }
+
+  .blogBoxdate {
+  width: 6rem;
+  }
+
+  .blogBoxday{
+    font-size: 4rem;
+  }
+
+  .blogBoxmonth{
+    font-size: 2.2rem;
+  }
+
+.SIGNUP{
+  font-size: 1rem;
+}
+
+}
+
+
+@media screen and (max-width: 600px) {
 
 .BottomListCon{
   display: none;
