@@ -770,7 +770,7 @@ display: inline-flex;
 
 }
 
-.SC1Con:hover,.SC2Con:hover,.SC3Con:hover{
+.SC1ConOP:hover .SC1Con,.SC2ConOP:hover .SC2Con,.SC3ConOP:hover .SC3Con{
 transform: translateY(-10rem) scaleY(0);
 }
 
@@ -840,7 +840,7 @@ padding-left: 1rem;
   height: 10.3rem;
 }
 
-.logo:hover{
+.logoConOP:hover .logo{
 transform: translateY(-5.15rem) scaleY(0);
 }
 
