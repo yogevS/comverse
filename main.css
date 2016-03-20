@@ -189,6 +189,37 @@ z-index: 1;
 height: 1.5rem;
 }
 
+
+.slides{
+  position: absolute;
+  top:38rem;
+}
+
+.slides input[type="radio"] {
+    display:none;
+}
+
+.slides input[type="radio"] + label {
+margin-left: 0.4rem;
+}
+
+.slides input[type="radio"] + label span {
+    display:inline-block;
+    width:2rem;
+    height:2rem;
+    background-color: white;
+    cursor:pointer;
+    border-radius: 0.4rem;
+}
+
+.slides input[type="radio"] + label span:hover{
+  background-color: #4070ff;
+}
+
+.slides input[type="radio"]:checked + label span {
+background-color: #4070ff;
+}
+
 @media screen and (max-width: 830px) {
 .MenueBarFix li{
 font-size: 1.2rem;
@@ -200,6 +231,10 @@ font-size: 1.2rem;
 
 .search img{
 top: 5.8rem;
+}
+
+.slides{
+  top:35rem;
 }
 
 }
@@ -234,8 +269,12 @@ top: 5.8rem;
 .topMediaCon{
   display:inline-flex; ;
   width: 100%;
-
 }
+
+.slides{
+  top:48rem;
+}
+
 
 }/* top media   */
 
@@ -399,7 +438,7 @@ opacity: 0.6;
    background-repeat: no-repeat;
    background-position:top;
    background-origin:content-box;
-
+  height: 40rem;
  }
 
 .Part1 .HeadLine{
@@ -731,7 +770,7 @@ display: inline-flex;
 
 }
 
-.SC1Con:hover,.SC2Con:hover,.SC3Con:hover{
+.SC1ConOP:hover .SC1Con,.SC2ConOP:hover .SC2Con,.SC3ConOP:hover .SC3Con{
 transform: translateY(-10rem) scaleY(0);
 }
 
@@ -801,7 +840,7 @@ padding-left: 1rem;
   height: 10.3rem;
 }
 
-.logo:hover{
+.logoConOP:hover .logo{
 transform: translateY(-5.15rem) scaleY(0);
 }
 
